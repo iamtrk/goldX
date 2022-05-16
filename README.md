@@ -22,33 +22,3 @@ If there is enough buy orders, the matching is found
 Remaining quantity if any, will be added to the Sell order book.
 
 Vice versa for a BUY order.
-
-Buy Order Book (TreeMap)
-orderId		time	price	intent		quantity
-2		2	11	buy		10
-4		4	10	buy		4
-1		1	10	buy		11
-3		3	9	buy		9
-
-TreeMap for Buy Order book
-9:[3] 
-10:[1,4]
-11:[2] 
-Doubly linked list of the Buy Order book will be 9<=>10<=>11
-
-
-
-Sell Order Book (TreeMap)
-orderId		time	price	intent		quantity
-7		7	9	Sell		9
-8		8	10	Sell		8
-5		5	12	Sell		12
-6		6	14	Sell		1
-
-TreeMap for Buy Order book, 
-Format: price:[List of Order IDs]
-9:[7] 
-10:[8]
-12:[5]
-14:[6] 
-Doubly linked list of the Buy Order book will be 9<=>10<=>12<=>14
