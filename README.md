@@ -1,5 +1,5 @@
 # goldX
-
+Basic order book implementation. Add Order & getMax logic is implemented.
 Order book is a datastructure that supports following operations
 
     1) Add an order : O(logN)
